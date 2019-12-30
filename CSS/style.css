@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=latin-ext');
+
+@font-face {
+font-family: "Big Noodle Titling";
+src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../Fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto-Regular.ttf");
+}
+
+:root{
+  --black:#111;
+  --gray: #222;
+  --light:#555;
+  --main: #2be;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Nunito;
+}
+
+a{
+  color: inherit;
+}
+a:active{
+  color: inherit;
+}
+a:visited{
+  color: inherit;
+}
+
+.outshade{
+  box-shadow: 0.15em 0.15em 0.3em #00000079, -0.15em -0.15em 0.3em #ffffff09;
+}
+.inshade{
+  box-shadow: inset 0.15em 0.15em 0.3em #00000079, inset -0.15em -0.15em 0.3em #ffffff09;
+}
+
+.active{
+  color: var(--main);
+}
+
+.translateLeft{
+  transform: translate(-50%,0);
+}
+
+.translateTop{
+  transform: translate(0,-50%);
+}
+
+.translateCenter{
+  transform: translate(-50%,-50%);
+}
+
+/* Body */
+
+body{
+  background-color: var(--black);
+  color: var(--light);
+}
+
+#navigation{
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  background: var(--gray);
+  box-shadow: 0 0.1em 5px var(--black);
+  z-index: 1;
+}
+
+#mainNavigation{
+  position: absolute;
+  display: inline-flex;
+  left: 50%;
+  top: 50%;
+}
+
+#mainNavigation > * {
+  margin: 0 0.3em;
+}
+
+/* Home button */
+
+#homeButton{
+  position: relative;
+  background: var(--black);
+  width: 4em;
+  height: 2em;
+  border-radius: 1em;
+}
+
+#homeButton > *{
+  position: absolute;
+  font-size: 130%;
+  left: 50%;
+  top: 50%;
+}
+
+/* Search Bar */
+
+#searchBar{
+  position: relative;
+  background: var(--black);
+  height: 2em;
+  width: 2.5em;
+  border-radius: 1em;
+  color: var(--light);
+  transition-duration: 250ms;
+}
+
+#searchBar:hover{
+  width: 20em;
+}
+
+#searchBar > *:not(.fa-search){
+  opacity: 0%;
+  transition-duration: 250ms;
+}
+
+#searchBar:hover > *{
+  opacity: 100%;
+}
+
+#searchBar > *{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+}
+#searchBar > .fa-search{
+  left: 1.25em;
+}
+#searchBar > p{
+  left: 50%;
+  top: 50%;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 110%;
+}
+#searchBar > .fa-times{
+  right: 0.5em;
+}
+
+/* Cart Button */
+
+#cart{
+  position: relative;
+  background: var(--black);
+  width: 4em;
+  height: 2em;
+  border-radius: 1em;
+}
+
+#cart>*{
+  position: absolute;
+  top:50%;
+}
+#cart>.fa-shopping-cart{
+  left: 0.9em;
+  font-size: 130%;
+}
+#cartItemNumber{
+  background: var(--main);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 1em;
+  right: 0.3em;
+}
+#cartItemNumber > p{
+  position: absolute;
+  color: var(--black);
+  font-weight: 600;
+  left: 50%;
+  top: 55%;
+}
+
+/* Log in Button*/
+
+#logInButton {
+  position: absolute;
+  background: var(--black);
+  color: var(--main);
+  right: -1.5em;
+  top: 50%;
+  width: 5em;
+  height: 2em;
+  border-radius: 1em;
+}
+#logInButton > * {
+  position: absolute;
+  white-space: nowrap;
+  text-transform: none;
+  font-size: 110%;
+  font-weight: 500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Showcase - Main Page*/
+
+#showcase{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at top,var(--gray), var(--black) 90%);
+}
+
+
+#test{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  height: 20em;
+  width: 20em;
+}
+#innerTest{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  height: 15em;
+  width: 15em;
+}
+
+
+
+/* Footer */
+
+#footer{
+  position: relative;
+  background: var(--black);
+  color: var(--gray);
+  width:100%;
+  height:2.5em;
+  bottom: 0;
+  z-index: 1;
+}
+
+#footer > *{
+  position: absolute;
+  top: 50%;
+}
+#footer > span{
+  color: var(--main);
+  right: 1em;
+  font-size: 150%;
+}
+#footer > span > *{
+  margin: 0 0.1em;
+}
+#footer > p{
+  color: var(--light);
+  left: 1em;
+  font-size: 75%;
+}
+
