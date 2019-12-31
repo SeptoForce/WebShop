@@ -22,6 +22,7 @@ src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
 
 :root{
   --black:#141414;
+  --blackLight:#171717;
   --gray: #222;
   --light:#444;
   --main: #2be;
@@ -103,6 +104,7 @@ body{
   width: 4em;
   height: 2em;
   border-radius: 1em;
+  transition-duration: 100ms;
 }
 
 #homeButton > *{
@@ -110,6 +112,9 @@ body{
   font-size: 130%;
   left: 50%;
   top: 50%;
+}
+#homeButton:hover{
+  background: var(--blackLight);
 }
 
 /* Search Bar */
@@ -165,6 +170,7 @@ body{
   width: 4em;
   height: 2em;
   border-radius: 1em;
+  transition-duration: 100ms;
 }
 
 #cart>*{
@@ -189,6 +195,9 @@ body{
   left: 50%;
   top: 55%;
 }
+#cart:hover{
+  background: var(--blackLight);
+}
 
 /* Log in Button*/
 
@@ -211,6 +220,9 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+#logInButton:hover{
+  background: var(--blackLight);
 }
 
 /* Showcase - Main Page*/
@@ -320,8 +332,9 @@ body{
   height: 2em;
   border-radius: 2em;
   border:solid 0.13em var(--main);
-  top: 7em;
+  top: 8em;
   left: 50%;
+  transition-duration: 150ms;
 
 }
 #showcaseButton > * {
@@ -332,6 +345,9 @@ body{
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+}
+#showcaseButton:hover{
+  transform: scale(1.05) translate(-47.5%,-47.5%);
 }
 
 
