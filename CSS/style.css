@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&subset=latin-ext');
 
 @font-face {
-font-family: "Big Noodle Titling";
+font-family: "Big Noodle Titling Oblique";
 src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
 }
+
+@font-face {
+  font-family: "Big Noodle Titling";
+  src: url("../Fonts//BigNoodleTitling.ttf");
+  }
 
 @font-face {
   font-family: "Nunito";
@@ -16,11 +21,11 @@ src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
 }
 
 :root{
-  --black:#111;
+  --black:#141414;
   --gray: #222;
   --light:#444;
   --main: #2be;
-  --gameNameColor: #b32347;
+  --gameNameColor: #b6163e;
 }
 
 *{
@@ -28,6 +33,8 @@ src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
   padding: 0;
   text-decoration: none;
   font-family: Nunito;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
 }
 
 a{
@@ -44,7 +51,7 @@ a:visited{
   box-shadow: 0.15em 0.15em 0.3em #00000079, -0.15em -0.15em 0.3em #ffffff09;
 }
 .inshade{
-  box-shadow: inset 0.15em 0.15em 0.3em #00000079, inset -0.15em -0.15em 0.3em #ffffff09;
+  box-shadow: inset 0.15em 0.15em 0.2em #0000005b, inset -0.15em -0.15em 0.3em #ffffff09;
 }
 
 
@@ -213,7 +220,7 @@ body{
   width: 100%;
   height: 100vh;
   min-height: 50em;
-  background: radial-gradient(circle at top,var(--gray), var(--black) 80%);
+  background: radial-gradient(circle at top,var(--gray), var(--black) 90vh);
 }
 
 #showcaseGames{
@@ -298,7 +305,7 @@ body{
   border-radius: 1em;
 }
 #showcaseGameNameName{
-  font-family: "Big Noodle Titling";
+  font-family: "Big Noodle Titling Oblique";
   position: absolute;
   top: 0.6em;
   left: 50%;
@@ -328,8 +335,127 @@ body{
 }
 
 
+/* Featured */
 
+#featured {
+  position: relative;
+  background: var(--black);
+  height: 100vh;
+  width: 100%;
+}
+#featured > div {
+  max-width: 90em;
+}
+#bestSelling{
+  position: absolute;
+  width: 90vw;
+  height: 20em;
+  top: 4em;
+  left: 50%;
+  border-radius: 2em;
+}
+#bestSelling > .inline{
+  position: absolute;
+  top: -3.5em;
+  left: 50%;
+}
+#bestSelling > .inline > p{
+  color: var(--main);
+  text-transform: uppercase;
+  font-size: 300%;
+  margin-left: 0.2em;
+  font-family: "Big Noodle Titling Oblique";
+}
+#bestSelling > .inline > i {
+  color: var(--main);
+  font-size: 250%;
+  transform: translate(0%, 14%);
+}
 
+#bestSellingGameList{
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  width: 90vw;
+  max-width: 90em;
+  height: 19em;
+  left: 50%;
+  top: 0.5em;
+  border-radius: 2em;
+  overflow: hidden;
+}
+.bestSellingGame{
+  position: relative;
+  top: 0.2em;
+  height: 18em;
+  width: 22em;
+  border-radius: 1em;
+  color: var(--main);
+  transition-duration: 250ms;
+  transform: scale(0.95);
+}
+.bestSellingGame:hover{
+  transform: scale(1.00);
+}
+.bestSellingGame > p {
+  font-family: "Big Noodle Titling Oblique";
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  bottom: 0.2em;
+  white-space: nowrap;
+  font-size: 225%;
+  opacity: 0.75;
+}
+.bestSellingGame > img {
+  position: absolute;
+  top: 0.4em;
+  width: 95%;
+  height: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+#newReleases{
+  position: absolute;
+  width: 90vw;
+  height: 20em;
+  top: 35em;
+  left: 50%;
+  border-radius: 2em;
+}
+#newReleases > .inline{
+  position: absolute;
+  top: -3.5em;
+  left: 50%;
+}
+#newReleases > .inline > p{
+  color: var(--main);
+  text-transform: uppercase;
+  font-size: 250%;
+  margin-left: 0.2em;
+  font-family: "Big Noodle Titling Oblique";
+}
+#newReleases > .inline > i {
+  color: var(--main);
+  font-size: 250%;
+  transform: translate(0%, 14%);
+}
+
+#newReleasesGameList{
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  width: 90vw;
+  max-width: 90em;
+  height: 19em;
+  left: 50%;
+  top: 0.5em;
+  border-radius: 2em;
+  overflow: hidden;
+}
 
 
 /* Footer */
@@ -367,4 +493,9 @@ body{
 }
 .backActive{
   background-color: var(--main);
+}
+
+.inline {
+  display: inline-flex;
+  justify-content: center;
 }
