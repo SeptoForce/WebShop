@@ -357,6 +357,7 @@ body{
   position: relative;
   background: var(--black);
   height: 100vh;
+  min-height: 60em;
   width: 100%;
 }
 #featured > div {
