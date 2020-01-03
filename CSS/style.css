@@ -22,10 +22,11 @@ src: url("../Fonts/BigNoodleTitling-Oblique.ttf");
 
 :root{
   --black:#141414;
-  --blackLight:#171717;
+  --blackLight:#181818;
   --gray: #222;
   --light:#444;
   --main: #2be;
+  --mainDark: #11617c;
   --gameNameColor: #b6163e;
 }
 
@@ -238,10 +239,11 @@ body{
 #showcaseGames{
   position: absolute;
   height: 40em;
-  width: 100%;
+  width: 99%;
   max-width: 90em;
   top: 50%;
   left: 50%;
+  border-radius: 1em;
   transform: translate(-50%, -50%);
 }
 #showcaseGames > * {
@@ -369,7 +371,7 @@ body{
   height: 20em;
   top: 4em;
   left: 50%;
-  border-radius: 2em;
+  border-radius: 1em;
 }
 #bestSelling > .inline{
   position: absolute;
@@ -398,7 +400,7 @@ body{
   height: 19em;
   left: 50%;
   top: 0.5em;
-  border-radius: 2em;
+  border-radius: 1em;
   overflow: hidden;
 }
 .bestSellingGame{
@@ -419,9 +421,9 @@ body{
   position: absolute;
   transform: translate(-50%,0);
   left: 50%;
-  bottom: 0.2em;
+  bottom: 0.5em;
   white-space: nowrap;
-  font-size: 225%;
+  font-size: 175%;
   opacity: 0.75;
 }
 .bestSellingGame > img {
@@ -431,7 +433,7 @@ body{
   height: 80%;
   left: 50%;
   transform: translate(-50%, 0);
-  border-radius: 1em;
+  border-radius: 0.5em;
   object-fit: cover;
 }
 
@@ -441,7 +443,7 @@ body{
   height: 20em;
   top: 35em;
   left: 50%;
-  border-radius: 2em;
+  border-radius: 1em;
 }
 #newReleases > .inline{
   position: absolute;
@@ -470,7 +472,7 @@ body{
   height: 19em;
   left: 50%;
   top: 0.5em;
-  border-radius: 2em;
+  border-radius: 1em;
   overflow: hidden;
 }
 
@@ -483,7 +485,6 @@ body{
   color: var(--gray);
   width:100%;
   height:2.5em;
-  bottom: 0;
   z-index: 4;
 }
 
@@ -515,4 +516,180 @@ body{
 .inline {
   display: inline-flex;
   justify-content: center;
+}
+
+
+
+
+
+.rating {
+  position: fixed;
+  bottom: 3em;
+  left: 1em;
+  height: 5em;
+}
+.rating >img {
+  height: 100%;
+}
+
+.topPage{
+  position: relative;
+  width: 80%;
+  max-width: 60em;
+  height: 80vh;
+  border-radius: 1em;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 5em;
+  color: var(--main);
+  background: var(--blackLight);
+}
+.mainImage{
+  width: 100%;
+  height: 25em;
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  top: 0;
+}
+.mainImage > img{
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  border-radius: 1em;
+}
+.topPage > h1{
+  position: absolute;
+  font-family: "Big Noodle Titling Oblique";
+  top: 7.5em;
+  left: 50%;
+  border-bottom: solid var(--main);
+  padding-bottom: 0.1em;
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 4em;
+  transform: translate(-50%, -50%);
+}
+.topPage > p {
+  position: absolute;
+  font-family: "Big Noodle Titling";
+  top: 21em;
+  width: 80%;
+  left: 50%;
+  text-align: center;
+  font-size: 1.8em;
+  transform: translate(-50%, -50%);
+}
+.buyButton{
+  position: absolute;
+  background: var(--mainDark);
+  color: white;
+  height: 4em;
+  width: 18em;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: -2.5em;
+  border-radius: 5em;
+}
+
+.buyButton > p {
+  position: absolute;
+  font-size: 1.4em;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 20%;
+}
+.foregroundButton{
+  position: absolute;
+  background: var(--main);
+  height: 100%;
+  width: 60%;
+  right: 0;
+  top: 0;
+  border-radius: 5em;
+  transition-duration: 250ms;
+}
+.foregroundButton:hover{
+  transform: scale(1.05);
+}
+.foregroundButton > p{
+  position: absolute;
+  font-size: 1.3em;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+}
+
+
+
+.bottomPage{
+  position: relative;
+  width: 80%;
+  max-width: 60em;
+  border-radius: 1em;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 6em;
+  color: var(--main);
+  background: var(--blackLight);
+  margin-bottom: 7em;
+  z-index: -1;
+}
+.bottomPage > .info {
+  position: absolute;
+  height: 11em;
+  width: 80%;
+  top: 4em;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.info > *{
+  position: absolute;
+  width: 40%;
+  height: 5em;
+}
+.info > .develop {
+  top: 0.5em;
+  left: 2em;
+}
+.info > .publish {
+  top: 0.5em;
+  right: 2em;
+}
+.info > .release {
+  bottom: 0.5em;
+  left: 2em;
+}
+.info > .rated {
+  bottom: 0.5em;
+  right: 2em;
+}
+.info > * > h1 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: 1em;
+}
+.info > * > p {
+  position: absolute;
+  color: white;
+  font-size: 1.2em;
+  left: 0.5em;
+  top: 1em;
+}
+
+.bottomPage > .images {
+  position: relative;
+  top: 18em;
+  width: 100%;
+  margin-bottom: 23em;
+}
+
+.images > img {
+  width: 100%;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+  object-fit: cover;
 }
