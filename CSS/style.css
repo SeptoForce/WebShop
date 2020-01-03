@@ -131,7 +131,7 @@ body{
   transition-timing-function: ease-out;
 }
 
-#searchBar:hover{
+#searchBar:hover, #searchBar:active{
   width: 20em;
 }
 
@@ -140,7 +140,7 @@ body{
   transition-duration: 250ms;
 }
 
-#searchBar:hover > *{
+#searchBar:hover > *,#searchBar:active > *{
   opacity: 100%;
 }
 
@@ -158,6 +158,7 @@ body{
   text-transform: none;
   font-weight: 500;
   font-size: 110%;
+  user-select: none;
 }
 #searchBar > .fa-times{
   right: 0.5em;
@@ -672,13 +673,15 @@ body{
 .info > * > h1 {
   color: var(--light);
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .info > * > p {
   position: absolute;
   color: white;
   font-size: 1.2em;
-  left: 0.5em;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  left: 50%;
   top: 1em;
 }
 
