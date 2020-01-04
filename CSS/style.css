@@ -698,3 +698,134 @@ body{
   margin-bottom: 1.5em;
   object-fit: cover;
 }
+
+
+
+/*///////////////////////////// CART /////////////////////////////*/
+
+
+.background100 {
+  position: relative;
+  height: 57em;
+  width: 100%;
+  background: var(--black);
+}
+.background100 > * {
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+}
+.background100 > .buyList {
+  width: 80%;
+  max-width: 60em;
+  height: 38em;
+  top: 5em;
+  background: var(--blackLight);
+  border-radius: 1em;
+  padding: 1em 0;
+}
+
+.buyList > a > .buyItem {
+  position: relative;
+  width: 85%;
+  height: 7em;
+  background: var(--gray);
+  margin-top: 1em;
+  transform: translate(-52%, 0);
+  left: 50%;
+  border-radius: 1em;
+  box-shadow: 0 0.3em 0.5em var(--black);
+}
+
+.buyItem > img {
+  position: absolute;
+  left: 0;
+  background: red;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em 0 0 1em;
+}
+.buyItem > h1 {
+  position: absolute;
+  left: 6.5em;
+  transform: translate(0,-50%);
+  top: 50%;
+  font-family: "Big Noodle Titling Oblique";
+  color: var(--main);
+  font-size: 2em;
+  text-align: left;
+}
+.buyItem > p {
+  position: absolute;
+  right: 1.5em;
+  transform: translate(0,-50%);
+  top: 50%;
+  font-family: "Big Noodle Titling Oblique";
+  color: var(--main);
+  font-size: 3em;
+  text-align: left;
+}
+.buyItem > div {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--gray);
+  height: 2em;
+  width: 2em;
+  font-size: 1.5em;
+  right: -1em;
+  top: 50%;
+  transform: translate(0,-50%);
+  z-index: 1;
+  box-shadow: 0 0.1em 0.3em var(--black);
+}
+
+.buyItem > div > * {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 49%;
+  top: 49%;
+}
+
+.background100 > .total {
+  width: 70%;
+  max-width: 50em;
+  height: 4em;
+  top: 45.5em;
+  background: var(--blackLight);
+  border-radius: 1em;
+}
+.total > * {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: 2em;
+  color: var(--light);
+}
+.total > h1 {
+  left: 40%;
+  top: 50%;
+}
+.total > p {
+  font-family: "Big Noodle Titling Oblique";
+  font-size: 3em;
+  color: var(--main);
+  left: 60%;
+  top: 50%;
+}
+
+.background100 > a > .continueButton {
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 15em;
+  height: 4em;
+  top: 51em;
+  background: var(--main);
+  border-radius: 2em;
+}
+.continueButton > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.5em;
+  color: white;
+  transform: translate(-50%, -50%);
+}
