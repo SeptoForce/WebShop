@@ -814,12 +814,16 @@ body{
 
 .background100 > a > .continueButton {
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: scale(1) translate(-50%, 0);
   width: 15em;
   height: 4em;
   top: 51em;
   background: var(--main);
   border-radius: 2em;
+  transition-duration: 600ms;
+}
+.background100 > a > .continueButton:hover{
+  transform: scale(1.05) translate(-47.5%, 0);
 }
 .continueButton > p {
   position: absolute;
