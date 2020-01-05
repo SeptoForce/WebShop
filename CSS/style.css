@@ -135,7 +135,7 @@ body{
   width: 20em;
 }
 
-#searchBar > *:not(.fa-search){
+#searchBar > *:not(a){
   opacity: 0%;
   transition-duration: 250ms;
 }
@@ -149,7 +149,7 @@ body{
   transform: translate(-50%,-50%);
   top:50%;
 }
-#searchBar > .fa-search{
+#searchBar > a{
   left: 1.25em;
 }
 #searchBar > p{
@@ -212,6 +212,7 @@ body{
   width: 5em;
   height: 2em;
   border-radius: 1em;
+  opacity: 0;
 }
 #logInButton > * {
   position: absolute;
@@ -227,7 +228,7 @@ body{
   background: var(--blackLight);
 }
 
-/* Showcase - Main Page*/
+/*//////////////////////////SHOWCASE MAIN PAGE/////////////////////*/
 
 #showcase{
   position: relative;
@@ -478,7 +479,7 @@ body{
 }
 
 
-/* Footer */
+/*//////////////////////////////FOOTER ////////////////////////////////*/
 
 #footer{
   position: relative;
@@ -747,7 +748,8 @@ body{
 }
 .buyItem > h1 {
   position: absolute;
-  left: 6.5em;
+  left: 7em;
+  font-weight: 500;
   transform: translate(0,-50%);
   top: 50%;
   font-family: "Big Noodle Titling Oblique";
@@ -832,4 +834,88 @@ body{
   font-size: 1.5em;
   color: white;
   transform: translate(-50%, -50%);
+}
+
+
+/*////////////////////// SEARCH ///////////////////////////*/
+
+
+
+.testingBox {
+  height: 5em;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.searchContainer {
+  position: absolute;
+  padding-top: 1em;
+  width: 90%;
+  max-width: 60em;
+  height: 85%;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 6em;
+  border-radius: 1em;
+  background: var(--blackLight);
+}
+
+.searchContainer > p {
+  position: absolute;
+  top: -1.5em;
+  transform: translate(-50%,0);
+  left: 50%;
+  font-size: 1.1em;
+  color: var(--light);
+}
+
+.searchContainer > a > .searchResult {
+  background: var(--gray);
+  color: var(--main);
+  position: relative;
+  transform: translate(-50%,0);
+  left: 50%;
+  width: 90%;
+  height: 4em;
+  border-radius: 5em;
+  margin: 1em 0;
+}
+.searchResult > * {
+  font-family: "Big Noodle Titling Oblique";
+}
+.searchResult > h1 {
+  font-size: 2em;
+  font-weight: 500;
+  position: absolute;
+  transform: translate(0,-50%);
+  top: 50%;
+  left: 1em;
+}
+.searchResult > p {
+  position: absolute;
+  font-size: 1.5em;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 6em;
+}
+.searchResult > .price {
+  position: absolute;
+  background: var(--main);
+  right: 0;
+  height: 100%;
+  width: 7.5em;
+  border-radius: 5em;
+}
+.searchResult > .price > p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Big Noodle Titling Oblique";
+  font-size: 2em;
+  transform: translate(-50%,-50%);
 }
