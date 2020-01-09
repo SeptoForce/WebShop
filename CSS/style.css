@@ -131,7 +131,7 @@ body{
   transition-timing-function: ease-out;
 }
 
-#searchBar:hover, #searchBar:active{
+#searchBar:hover, #searchBar:focus{
   width: 20em;
 }
 
@@ -140,7 +140,7 @@ body{
   transition-duration: 250ms;
 }
 
-#searchBar:hover > *,#searchBar:active > *{
+#searchBar:hover > *, #searchBar:active > *{
   opacity: 100%;
 }
 
@@ -163,8 +163,20 @@ body{
 #searchBar > .fa-times{
   right: 0.5em;
 }
+#searchBarForm{
+  position: absolute;
+  left: 50%;
+  width: inherit;
+  height: inherit;
+  transform: translate(-50%,-50%);
+  border-radius: inherit;
+  text-align: center;
+  border: 0;
+  background-color: var(--black);
+  color: var(--light);
+}
 
-/* Cart Button */
+/*////////////////////////////// CART BUTTON //////////////////////////// */
 
 #cart{
   position: relative;
