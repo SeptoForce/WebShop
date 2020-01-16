@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WebShop | Search</title>
+  <title>WebShop | Admin</title>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -15,13 +15,13 @@
     <div id="mainNavigation" class="translateCenter">
 
       <a href="index.html">
-        <div id="homeButton">
+        <div id="homeButton" class="">
           <i class="fa fa-home translateCenter"></i>
         </div>
       </a>
       <form id="searchBar" action="" method="POST">
-        <input id="searchBarForm" type="text" name="form_gameName" placeholder="Search">
-        <a href="#"><i class="fa fa-search active"></i></a>
+        <input id="searchBarForm" type="search" name="form_gameName" placeholder="Search">
+        <a href="search.html"><i class="fa fa-search"></i></a>
         <i class="fa fa-times"></i>
       </form>
       <a href="cart.html">
@@ -41,30 +41,32 @@
   </div>
 
   <div class="background100">
-    <div class="searchContainer">
-      <p>1 search result</p>
-      <a href="gameSites/watchdogs.html">
-        <div class="searchResult">
-          <h1>Watch Dogs Legion</h1>
-          <p>Q1 2020</p>
-          <div class="price">
-            <p>59.99</p>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="searchResult">
-          <h1>Watch Dogs 2</h1>
-          <p>Nov 15, 2016</p>
-          <div class="price">
-            <p>49.99</p>
-          </div>
-        </div>
-      </a>
+    <form action="" method="POST" class="adminForm">
+      <p>Add new game</p>
+      
+      <input type="text" placeholder="Game name" class="formGameName">
+      <input type="text" placeholder="Game description" class="formGameDesc">
+      
+      <input type="text" placeholder="Price" class="formGamePrice">
+      
+      <input type="text" placeholder="Developer" class="formGameDeveloper">
+      <input type="text" placeholder="Publisher" class="formGamePublisher">
+      <input type="date" placeholder="Release Date" class="formGameRelease">
+      <input type="text" placeholder="PEGI rating" class="formGamePegi">
 
-    </div>
+      <p class="pGameImageMain">Main Game Image</p>
+      <input type="file" class="formGameFileMain">
+      <p class="pGameImage">Screenshots</p>
+      <input type="file" class="formGameFileImg1">
+      <input type="file" class="formGameFileImg2">
+      <input type="file" class="formGameFileImg3">
+      <input type="file" class="formGameFileImg4">
 
+      <input type="submit" value="send">
+
+    </form>
   </div>
+  
 
   <div id="footer">
     <p class="translateTop">© 2020 Franko Žarković</p>

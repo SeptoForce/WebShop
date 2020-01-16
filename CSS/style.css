@@ -931,3 +931,174 @@ body{
   font-size: 2em;
   transform: translate(-50%,-50%);
 }
+
+
+
+.adminForm {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 52%;
+  left: 50%;
+  width: 90%;
+  max-width: 60em;
+  height: 52em;
+  background:var(--blackLight);
+  border-radius: 1em;
+}
+.adminForm > p{
+  color: var(--main);
+  font-family: "Big Noodle Titling Oblique";
+  position: absolute;
+  top: 0.5em;
+  font-size: 200%;
+
+}
+
+.adminForm>*{
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+}
+
+.adminForm>.formGameName{
+  border: none;
+  height: 2em;
+  width: 15em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 5em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 5em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+
+.adminForm>.formGameDesc{
+  border: none;
+  width: 90%;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 8em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGamePrice{
+  border: none;
+  width: 5em;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 11em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGameDeveloper{
+  border: none;
+  width: 15em;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 13.5em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGamePublisher{
+  border: none;
+  width: 15em;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 16em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGameRelease{
+  border: none;
+  width: 11em;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 18.5em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGamePegi{
+  border: none;
+  width: 7em;
+  height: 2em;
+  background: var(--black);
+  color: var(--main);
+  border-radius: 1em;
+  font-family: "Nunito";
+  font-size: 120%;
+  top: 21em;
+  transition-duration: 250ms;
+  text-align: center;
+}
+
+.adminForm>.formGameFileMain{
+  top: 38.5em;
+}
+
+.adminForm>.formGameFileImg1{
+  top: 44em;
+}
+.adminForm>.formGameFileImg2{
+  top: 47em;
+}
+.adminForm>.formGameFileImg3{
+  top: 50em;
+}
+.adminForm>.formGameFileImg4{
+  top: 53em;
+}
+
+.adminForm>input[type=submit]{
+  background: var(--main);
+  border: none;
+  height: 2em;
+  width: 5em;
+  color: white;
+  border-radius: 5em;
+  font-family: "Nunito";
+  font-size: 120%;
+  bottom: 1em;
+  transition-duration: 250ms;
+}
+.adminForm>input[type=submit]:hover{
+  transform: scale(1.1) translate(-45%);
+}
+
+.adminForm > .pGameImageMain {
+  top: 20em;
+  font-size: 1.5em;
+}
+.adminForm > .pGameImage {
+  top: 23em;
+  font-size: 1.5em;
+}
+
+
